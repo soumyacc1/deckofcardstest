@@ -1,0 +1,1204 @@
+10:03:38.787 [main]  INFO  com.intuit.karate - Karate version: 1.5.0-SNAPSHOT
+10:03:39.768 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/featureFiles/sample.feature - mismatched input 'a' expecting <EOF>
+10:04:17.928 [main]  INFO  com.intuit.karate - Karate version: 1.5.0-SNAPSHOT
+10:04:18.668 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/featureFiles/sample.feature - mismatched input 'a' expecting <EOF>
+10:06:51.348 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:06:51.877 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/featureFiles/sample.feature - mismatched input 'w' expecting <EOF>
+10:08:41.305 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:08:41.780 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/featureFiles/deckOfCards.feature - mismatched input 'w' expecting <EOF>
+10:09:16.269 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:09:16.936 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+10:09:19.419 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:6
+* print url
+js failed:
+>>>>
+01: karate.log('[print]',url)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "url" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:6
+10:09:21.504 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:09:55.187 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:09:55.749 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697036995746
+10:09:55.797 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+10:09:58.727 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:09:59.661 [main]  DEBUG com.intuit.karate - response time in milliseconds: 929
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:10:02 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0q6rXm4Nmb5GP5d7B2e7tbMzDQ6AhY9mLW%2BDWgqJreH3aNcOyQnTeT1MqUbptdjx5w8rZYO%2FTuMDNsjqbPVc%2BMsII2jVheZAbGIT9C5Oopd4%2BctB%2FPsa4i1okRdfmFbW8uZLAQc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8148070eed81e847-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "78vwt1aawmbz", "remaining": 54, "shuffled": false}
+
+10:09:59.950 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "78vwt1aawmbz",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:09:59.960 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:10:02 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=0q6rXm4Nmb5GP5d7B2e7tbMzDQ6AhY9mLW%2BDWgqJreH3aNcOyQnTeT1MqUbptdjx5w8rZYO%2FTuMDNsjqbPVc%2BMsII2jVheZAbGIT9C5Oopd4%2BctB%2FPsa4i1okRdfmFbW8uZLAQc%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "8148070eed81e847-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:10:01.391 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:17:38.703 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:17:39.384 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697037459378
+10:17:39.445 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+10:17:42.686 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:17:43.591 [main]  DEBUG com.intuit.karate - response time in milliseconds: 900
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:17:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VmJXUFbg1RR%2BWyVRRJh%2BBMc0Lq5jVIQQBsdE2tRjGvoFTT8rScBpn6LEB8woM3M7uLmwExWQdoqk3Ei%2B3UA7tKzi4j8zrq7SV8c7e0T4FwgSMsx8Lqh%2BxjY2jOW3GfXtq%2FQyAR8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814812628a75e7a2-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "ytgltp7w8qcc", "remaining": 54, "shuffled": false}
+
+10:17:43.834 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "ytgltp7w8qcc",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:17:43.840 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:17:46 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VmJXUFbg1RR%2BWyVRRJh%2BBMc0Lq5jVIQQBsdE2tRjGvoFTT8rScBpn6LEB8woM3M7uLmwExWQdoqk3Ei%2B3UA7tKzi4j8zrq7SV8c7e0T4FwgSMsx8Lqh%2BxjY2jOW3GfXtq%2FQyAR8%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814812628a75e7a2-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:17:43.846 [main]  INFO  com.intuit.karate - [print] ytgltp7w8qcc 
+10:17:45.441 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:19:15.417 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:19:16.154 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697037556153
+10:19:19.297 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:19:20.017 [main]  DEBUG com.intuit.karate - response time in milliseconds: 715
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:19:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c5EEcQHPT2InQ%2BDMMf6Rh%2Bq6dY2WB7XBwOSWUQTrD0OSQRFmNK%2BOv2gSMlcjIhqrmyAYD%2BShKV%2BiB76EjdCXgGso8lJUc3vjUcRVxywBQlPzgseuPTWOOZSY0lzOEEEqqFdiG1c%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814814bd1e3baa57-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "9sw9fjls561s", "remaining": 54, "shuffled": false}
+
+10:19:20.272 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "9sw9fjls561s",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:19:20.278 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:19:22 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=c5EEcQHPT2InQ%2BDMMf6Rh%2Bq6dY2WB7XBwOSWUQTrD0OSQRFmNK%2BOv2gSMlcjIhqrmyAYD%2BShKV%2BiB76EjdCXgGso8lJUc3vjUcRVxywBQlPzgseuPTWOOZSY0lzOEEEqqFdiG1c%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814814bd1e3baa57-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:19:20.284 [main]  INFO  com.intuit.karate - [print] 9sw9fjls561s 
+10:19:20.453 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://deckofcardsapi.com/api/deck/new/shuffle/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"deck_count":6,"deck_id":"+deckID+"}
+
+10:19:20.749 [main]  DEBUG com.intuit.karate - response time in milliseconds: 296
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:19:23 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nkiAMwdBQLLtZUBudYCL8k7zRKA9M3xfaoShR1yi7Gn60qdpm%2F6aN90sFkYt5hEgS9EJWGod0Pih80sedEkZDF3%2F8VzbYn%2BPUfJr1U0PTIWG%2BZ27kpGUzpwGv2QPRc5yc5Ih2fU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814814c1c8513ac0-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "vu7ndm0oj92x", "remaining": 52, "shuffled": true}
+
+10:19:20.751 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "vu7ndm0oj92x",
+  "remaining": 52,
+  "shuffled": true
+}
+ 
+10:19:20.752 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:19:23 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nkiAMwdBQLLtZUBudYCL8k7zRKA9M3xfaoShR1yi7Gn60qdpm%2F6aN90sFkYt5hEgS9EJWGod0Pih80sedEkZDF3%2F8VzbYn%2BPUfJr1U0PTIWG%2BZ27kpGUzpwGv2QPRc5yc5Ih2fU%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814814c1c8513ac0-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:19:22.281 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:37:26.653 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:37:27.236 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697038647234
+10:37:30.336 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:37:31.337 [main]  DEBUG com.intuit.karate - response time in milliseconds: 997
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:37:33 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=exPGXtTs0p%2FNPpGuPCImYauvBhFSNGeaoYQSDuD8THBBdtXQcu%2F96Kqbu2gA0nCxT0Xg86dHc0j7fy5PyNEpb8%2BzizjlR0%2FLuI99cV5geqlh9WN5dkxCVcESx%2BjWDBqSlJZx5RM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81482f6179bd2c87-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "18lxrp4xs788", "remaining": 54, "shuffled": false}
+
+10:37:31.601 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "18lxrp4xs788",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:37:31.606 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:37:33 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=exPGXtTs0p%2FNPpGuPCImYauvBhFSNGeaoYQSDuD8THBBdtXQcu%2F96Kqbu2gA0nCxT0Xg86dHc0j7fy5PyNEpb8%2BzizjlR0%2FLuI99cV5geqlh9WN5dkxCVcESx%2BjWDBqSlJZx5RM%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "81482f6179bd2c87-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:37:31.614 [main]  INFO  com.intuit.karate - [print] 18lxrp4xs788 
+10:37:31.653 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:16
+* def value1 =  karate.quote(deckID)
+js failed:
+>>>>
+01: karate.quote(deckID)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:16
+10:37:31.666 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:36
+And path deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:36
+10:37:33.348 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:41:29.142 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:41:29.682 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697038889680
+10:41:32.614 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:41:33.499 [main]  DEBUG com.intuit.karate - response time in milliseconds: 878
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:41:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qvSE0HaatI1QsyMzVuA9B%2BBLUyAdwtKVLAfaIhotWAyCOTptBD%2FB1JyVrEgOl7Y350e07ARdFiJ5eNwWE4xXOxAOL2SxcgyG%2BMuJY0SxrCZX7eREn0TseR64se3gyV%2FMSqw37bg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8148354b5f07e946-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "x7w8kz3emf46", "remaining": 54, "shuffled": false}
+
+10:41:33.765 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "x7w8kz3emf46",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:41:33.771 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:41:36 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qvSE0HaatI1QsyMzVuA9B%2BBLUyAdwtKVLAfaIhotWAyCOTptBD%2FB1JyVrEgOl7Y350e07ARdFiJ5eNwWE4xXOxAOL2SxcgyG%2BMuJY0SxrCZX7eREn0TseR64se3gyV%2FMSqw37bg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "8148354b5f07e946-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:41:33.776 [main]  INFO  com.intuit.karate - [print] x7w8kz3emf46 
+10:41:33.811 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:16
+* def value1 =  karate.quote(deckID)
+js failed:
+>>>>
+01: karate.quote(deckID)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:16
+10:41:33.822 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:38
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:38
+10:41:35.444 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:49:38.958 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:49:39.611 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697039379607
+10:49:43.010 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:49:43.756 [main]  DEBUG com.intuit.karate - response time in milliseconds: 741
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:49:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=houGQXk%2FZjGMU5d%2FB9QpsMtlcBlGd%2FRDSFPx7TlqqNEIZJNPVz4YI%2FRZyw2SHyoqa%2Fq9u0Gj7HLS48bOgIh%2F%2FG%2FvpOOhzQ8OkiI9BQdX5kcaww5%2FlNRUNGNUOJtHpFxl7RECg5E%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81484144496946c8-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "xvudq1qxysje", "remaining": 54, "shuffled": false}
+
+10:49:44.117 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "xvudq1qxysje",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:49:44.124 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:49:46 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=houGQXk%2FZjGMU5d%2FB9QpsMtlcBlGd%2FRDSFPx7TlqqNEIZJNPVz4YI%2FRZyw2SHyoqa%2Fq9u0Gj7HLS48bOgIh%2F%2FG%2FvpOOhzQ8OkiI9BQdX5kcaww5%2FlNRUNGNUOJtHpFxl7RECg5E%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "81484144496946c8-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:49:44.132 [main]  INFO  com.intuit.karate - [print] xvudq1qxysje 
+10:49:44.183 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:17
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:17
+10:49:44.206 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:38
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:38
+10:49:46.384 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:52:08.091 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:52:08.744 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697039528739
+10:52:11.792 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:52:12.593 [main]  DEBUG com.intuit.karate - response time in milliseconds: 795
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:52:15 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BVbHJRROQs7DZcAbZ%2FhSxBtA2BlkiFko912xkWLz3Erx37LWYt6R%2BlyFkv5Z%2BrJa0H9O%2BFonF1gRENNyo7XDjtjJiCMBxoTqnWB%2Fxi2OZNdO6Gyfbs0jqMCXqefOut7gdv5o6Wg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814844e58a19486e-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "b7nhs1eo6mx4", "remaining": 54, "shuffled": false}
+
+10:52:12.844 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "b7nhs1eo6mx4",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:52:12.851 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:52:15 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BVbHJRROQs7DZcAbZ%2FhSxBtA2BlkiFko912xkWLz3Erx37LWYt6R%2BlyFkv5Z%2BrJa0H9O%2BFonF1gRENNyo7XDjtjJiCMBxoTqnWB%2Fxi2OZNdO6Gyfbs0jqMCXqefOut7gdv5o6Wg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814844e58a19486e-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:52:12.859 [main]  INFO  com.intuit.karate - [print] b7nhs1eo6mx4 
+10:52:12.899 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:17
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:17
+10:52:12.912 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:38
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:38
+10:52:14.918 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:52:40.607 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:52:41.295 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697039561293
+10:52:45.174 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:52:45.877 [main]  DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:52:48 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c044JNUcqHrqdCzST%2FNTcedWVudAR88YuQOS5RSXT6MicIcSs6BrrgohCQ9jR3NQzqI1wmdMqnHSiBEr1r7WMwBj9ovk041DNPLcIIuKmyh0YtS8ovZu8ttpeTWkKfBNobh%2Fbwc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814845b5dad82cb0-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "pgju9oklaz1w", "remaining": 54, "shuffled": false}
+
+10:52:46.124 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "pgju9oklaz1w",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:52:46.129 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:52:48 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=c044JNUcqHrqdCzST%2FNTcedWVudAR88YuQOS5RSXT6MicIcSs6BrrgohCQ9jR3NQzqI1wmdMqnHSiBEr1r7WMwBj9ovk041DNPLcIIuKmyh0YtS8ovZu8ttpeTWkKfBNobh%2Fbwc%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814845b5dad82cb0-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:52:46.135 [main]  INFO  com.intuit.karate - [print] pgju9oklaz1w 
+10:52:46.180 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:18
+* print 'Deck ID is : ', value2
+js failed:
+>>>>
+01: karate.log('[print]','Deck ID is : ', value2)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "value2" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:18
+10:52:46.191 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:38
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:38
+10:52:47.814 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:53:24.349 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:53:24.935 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697039604933
+10:53:27.959 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:53:29.044 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1081
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:53:31 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GpdEeoFvrw8ijLpL0XA7xfuJuWKZO6nH%2FRxhQlYIw85fhPQrrhiU0yCHoDcHmQFlX2owKlRotZNAzdsk27XxAgTJamwiBiFTvBj3I6LOLwt2wVnXbzh%2BiN9hahkqUbnUYmW6HoA%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 814846c2db2feb33-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "23kq2rjms595", "remaining": 54, "shuffled": false}
+
+10:53:29.303 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "23kq2rjms595",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:53:29.310 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:53:31 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GpdEeoFvrw8ijLpL0XA7xfuJuWKZO6nH%2FRxhQlYIw85fhPQrrhiU0yCHoDcHmQFlX2owKlRotZNAzdsk27XxAgTJamwiBiFTvBj3I6LOLwt2wVnXbzh%2BiN9hahkqUbnUYmW6HoA%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "814846c2db2feb33-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:53:29.319 [main]  INFO  com.intuit.karate - [print] 23kq2rjms595 
+10:53:29.344 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:22
+And request
+"""
+{
+    "deck_count":6,
+/*  "deck_id": "value2"*/
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token * at position 44.
+src/test/java/featureFiles/deckOfCards.feature:22
+10:53:29.386 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:38
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:38
+10:53:31.108 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
+10:54:34.522 [main]  INFO  com.intuit.karate - Karate version: 1.3.1
+10:54:35.091 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697039675088
+10:54:38.043 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://deckofcardsapi.com/api/deck/new/?jokers_enabled=true
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:54:38.917 [main]  DEBUG com.intuit.karate - response time in milliseconds: 868
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:54:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zdYNgpqNjWm3uCrhw9qjDInGCu%2FVapJNGlHcM%2BRQUPlDBh4XqyxFHTEQZ1ynCnbmZOVT36eY8LwXpiw9fhCKyBE72D9jxAEx0obEmYz6Be7a6unXhq607jFWWdx1pdGt1YXFS4U%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 81484877f8242e63-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "a72q5wb90ycy", "remaining": 54, "shuffled": false}
+
+10:54:39.223 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "a72q5wb90ycy",
+  "remaining": 54,
+  "shuffled": false
+}
+ 
+10:54:39.231 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:54:41 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zdYNgpqNjWm3uCrhw9qjDInGCu%2FVapJNGlHcM%2BRQUPlDBh4XqyxFHTEQZ1ynCnbmZOVT36eY8LwXpiw9fhCKyBE72D9jxAEx0obEmYz6Be7a6unXhq607jFWWdx1pdGt1YXFS4U%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "81484877f8242e63-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:54:39.240 [main]  INFO  com.intuit.karate - [print] a72q5wb90ycy 
+10:54:39.409 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://deckofcardsapi.com/api/deck/new/shuffle/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: deckofcardsapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"deck_count":"6\n\/*  \"deck_id\": \"value2\"*\/"}
+
+10:54:39.887 [main]  DEBUG com.intuit.karate - response time in milliseconds: 477
+1 < 200
+1 < Date: Wed, 11 Oct 2023 15:54:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < X-Content-Type-Options: nosniff
+1 < Referrer-Policy: same-origin
+1 < X-Frame-Options: DENY
+1 < Vary: Origin
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wnBq2aQBoqOeNL98MBInPf57PwnKqvTnzTk6RIY2DpwGTIDCX5OQUYQBGBQaYg2ohgOowshNjrg%2BudYbv2KMgV2hXO8A3WHDjaVIfNnZXsLyNjNPhCeoGzmZbPSBVrZHyPo5qD4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8148487dfb8d2e77-DFW
+1 < alt-svc: h3=":443"; ma=86400
+{"success": true, "deck_id": "7b39smilgstk", "remaining": 52, "shuffled": true}
+
+10:54:39.890 [main]  INFO  com.intuit.karate - [print] {
+  "success": true,
+  "deck_id": "7b39smilgstk",
+  "remaining": 52,
+  "shuffled": true
+}
+ 
+10:54:39.891 [main]  INFO  com.intuit.karate - [print] {
+  "Date": [
+    "Wed, 11 Oct 2023 15:54:42 GMT"
+  ],
+  "Content-Type": [
+    "application/json"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "X-Content-Type-Options": [
+    "nosniff"
+  ],
+  "Referrer-Policy": [
+    "same-origin"
+  ],
+  "X-Frame-Options": [
+    "DENY"
+  ],
+  "Vary": [
+    "Origin"
+  ],
+  "CF-Cache-Status": [
+    "DYNAMIC"
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wnBq2aQBoqOeNL98MBInPf57PwnKqvTnzTk6RIY2DpwGTIDCX5OQUYQBGBQaYg2ohgOowshNjrg%2BudYbv2KMgV2hXO8A3WHDjaVIfNnZXsLyNjNPhCeoGzmZbPSBVrZHyPo5qD4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "8148487dfb8d2e77-DFW"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400"
+  ],
+  "Set-Cookie": [
+  ]
+}
+ 
+10:54:39.932 [main]  ERROR com.intuit.karate - src/test/java/featureFiles/deckOfCards.feature:36
+* def value2 = deckID
+js failed:
+>>>>
+01: deckID
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "deckID" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/featureFiles/deckOfCards.feature:36
+10:54:41.711 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/featureFiles/deckOfCards.feature
